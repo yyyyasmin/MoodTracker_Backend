@@ -6,6 +6,9 @@ WORKDIR /app
 COPY build.gradle settings.gradle gradlew gradlew.bat ./
 COPY gradle ./gradle
 
+# Ausführungsrechte für gradlew setzen (wichtig!)
+RUN chmod +x gradlew
+
 # Dummy-Build zum Cachen der Dependencies
 RUN ./gradlew dependencies || true
 
