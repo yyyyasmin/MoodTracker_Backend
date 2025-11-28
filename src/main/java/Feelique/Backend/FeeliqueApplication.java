@@ -1,4 +1,4 @@
-package com.example.Feelique;
+package Feelique.Backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
